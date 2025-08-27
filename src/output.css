@@ -291,6 +291,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
