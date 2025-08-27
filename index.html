@@ -22,7 +22,8 @@
   <body
     class="w-full box-content flex flex-1 flex-col justify-center items-center bg-[#f5fff6]"
   >
-    <nav
+    <div
+      id="nav"
       class="w-full max-h-10 pl-6 pr-6 pt-14 pb-14 flex flex-row items-center justify-between shadow-[0_1px_50px_0px_rgba(181,181,181,0.25)] bg-white"
     >
       <div id="left" class="flex flex-row items-center justify-between">
@@ -58,8 +59,9 @@
           </li>
         </ul>
       </div>
-    </nav>
-    <banner
+    </div>
+    <div
+      id="banner"
       class="w-full h-max-[239px] pt-6 pb-6 flex flex-1 flex-col justify-center items-center bg-gradient-to-r from-green-950 via via-green-800 to bg-green-950"
     >
       <img
@@ -75,14 +77,14 @@
         Government Emergency Services at Your Fingertip - A Project by the
         Government of the People's Republic of Bangladesh
       </h3>
-    </banner>
+    </div>
     <div id="service-area" class="w-95/100 p-10 flex flex-1">
       <div
         class="left-cards w-9/12 grid grid-cols-3 gap-x-1 gap-y-2 justify-center items-center rounded-xl shadow-white"
       >
         <div
           id="card-1"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white gap-1"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
@@ -94,12 +96,11 @@
 
             <i class="fa-regular fa-heart"></i>
           </div>
-          <h1 class="text-xl font-bold">জরুরি</h1>
-
-          <h2>N</h2>
-          <h2 class="text-xl font-bold">9</h2>
+          <h1 class="text-xl font-bold">জাতীয় জরুরি সেবা</h1>
+          <h2>National Emergency</h2>
+          <h2 class="text-2xl font-bold">999</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">স</h3>
+            <h3 class="text-center">সার্বজনীন</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -117,7 +118,7 @@
         </div>
         <div
           id="card-2"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/police.png" alt="" srcset="" />
@@ -125,10 +126,10 @@
           </div>
 
           <h1 class="text-xl font-bold">পুলিশ</h1>
-          <h2>P</h2>
-          <h2 class="text-xl font-bold">9</h2>
+          <h2>Police</h2>
+          <h2 class="text-xl font-bold">999</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">প</h3>
+            <h3 class="text-center">পুলিশ</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -146,7 +147,7 @@
         </div>
         <div
           id="card-3"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
@@ -159,10 +160,10 @@
           </div>
 
           <h1 class="text-xl font-bold">ফায়ার সার্ভিস</h1>
-          <h2>F</h2>
-          <h2 class="text-xl font-bold">9</h2>
-          <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">ফ</h3>
+          <h2>Fire Service</h2>
+          <h2 class="text-xl font-bold">999</h2>
+          <div class="text-inside w-[70px] h-[24px] bg-[#5c5c5c33] rounded-xl">
+            <h3 class="text-center">ফায়ার</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -180,7 +181,7 @@
         </div>
         <div
           id="card-4"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
@@ -193,10 +194,10 @@
           </div>
 
           <h1 class="text-xl font-bold">অ্যাম্বুলেন্স</h1>
-          <h2>A</h2>
-          <h2 class="text-xl font-bold">1</h2>
+          <h2>Ambulance</h2>
+          <h2 class="text-xl font-bold">1944-999999</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">অ্যা</h3>
+            <h3 class="text-center">স্বাস্থ্য</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -215,7 +216,7 @@
 
         <div
           id="card-5"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
@@ -227,11 +228,11 @@
             <i class="fa-regular fa-heart"></i>
           </div>
 
-          <h1 class="text-xl font-bold">নগর সেবা</h1>
-          <h2>U</h2>
-          <h2 class="text-xl font-bold">1</h2>
+          <h1 class="text-xl font-bold">নারী ও শিশু সহায়তা</h1>
+          <h2>Women and Children Helpline</h2>
+          <h2 class="text-xl font-bold">109</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">ন</h3>
+            <h3 class="text-center">সহায়তা</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -249,7 +250,7 @@
         </div>
         <div
           id="card-6"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
@@ -261,11 +262,11 @@
             <i class="fa-regular fa-heart"></i>
           </div>
 
-          <h1 class="text-xl font-bold">যানজট নিরসন</h1>
-          <h2>Q</h2>
-          <h2 class="text-xl font-bold">1</h2>
+          <h1 class="text-xl font-bold">দুদক</h1>
+          <h2>Anti-corruption</h2>
+          <h2 class="text-xl font-bold">106</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">য</h3>
+            <h3 class="text-center">সরকারি</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -283,7 +284,7 @@
         </div>
         <div
           id="card-7"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
@@ -295,11 +296,11 @@
             <i class="fa-regular fa-heart"></i>
           </div>
 
-          <h1 class="text-xl font-bold">তথ্য</h1>
-          <h2>D</h2>
-          <h2 class="text-xl font-bold">3</h2>
+          <h1 class="text-xl font-bold">বিদ্যুৎ বিভ্রাট</h1>
+          <h2>Electricity Outage</h2>
+          <h2 class="text-xl font-bold">16216</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">ত</h3>
+            <h3 class="text-center">বিদ্যুৎ</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -317,23 +318,18 @@
         </div>
         <div
           id="card-8"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
-            <img
-              class="w-8 h-8"
-              src="./assets/emergency.png"
-              alt=""
-              srcset=""
-            />
+            <img class="w-8 h-8" src="./assets/brac.png" alt="" srcset="" />
             <i class="fa-regular fa-heart"></i>
           </div>
 
-          <h1 class="text-xl font-bold">সড়ক দুর্ঘটনা</h1>
-          <h2>C</h2>
-          <h2 class="text-xl font-bold">2</h2>
+          <h1 class="text-xl font-bold">ব্র্যাক</h1>
+          <h2>Brac</h2>
+          <h2 class="text-xl font-bold">16445</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">ড়</h3>
+            <h3 class="text-center">এন জি ও</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -351,23 +347,23 @@
         </div>
         <div
           id="card-9"
-          class="flex flex-col w-[320px] h-[240px] p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
+          class="flex flex-col w-[320px] h-[260px] gap-1 p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white"
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img
               class="w-8 h-8"
-              src="./assets/emergency.png"
+              src="./assets/Bangladesh-Railway.png"
               alt=""
               srcset=""
             />
             <i class="fa-regular fa-heart"></i>
           </div>
 
-          <h1 class="text-xl font-bold">কলহ নিরসন</h1>
-          <h2>T</h2>
-          <h2 class="text-xl font-bold">7</h2>
+          <h1 class="text-xl font-bold">বাংলাদেশ রেলওয়ে</h1>
+          <h2>Bangladesh Railway</h2>
+          <h2 class="text-xl font-bold">163</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
-            <h3 class="text-center">ক</h3>
+            <h3 class="text-center">পরিবহন</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
@@ -405,11 +401,10 @@
               <p>11:13:00 AM</p>
             </div>
           </div>
-
           <div id="his2" class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
             <h1>আম্বুলেন্স</h1>
             <div class="flex text-center justify-between">
-              <p>1-800-777111</p>
+              <p>1-994-999999</p>
               <p>10:15:00 AM</p>
             </div>
           </div>
