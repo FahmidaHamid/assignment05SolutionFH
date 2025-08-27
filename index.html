@@ -39,21 +39,20 @@
               id="life"
               class="bg-[#43ff641a] rounded-xl p-3 flex flex-row items-center justify-between space-x-3"
             >
-              <h1 class="text-base font-extrabold">0</h1>
+              <h1 id="heart-count" class="text-base font-extrabold">0</h1>
               <img class="w-6 h-6" src="./assets/heart.png" alt="" srcset="" />
             </div>
           </li>
           <li>
             <div
-              id="coins"
               class="bg-[#43ff641a] rounded-xl p-3 flex flex-row items-center justify-between space-x-4"
             >
-              <h1 class="text-base font-extrabold">100</h1>
+              <h1 id="coins-left" class="text-base font-extrabold">100</h1>
               <img class="w-8 h-8" src="./assets/coin.png" alt="" srcset="" />
             </div>
           </li>
           <li>
-            <div id="coins" class="bg-[#00a63e] rounded-3xl p-3">
+            <div id="copies" class="bg-[#00a63e] rounded-3xl p-3">
               <h1 class="text-lg font-extrabold text-white">2 Copy</h1>
             </div>
           </li>
@@ -61,7 +60,7 @@
       </div>
     </div>
     <div
-      id="banner"
+      id="hero"
       class="w-full h-max-[239px] pt-6 pb-6 flex flex-1 flex-col justify-center items-center bg-gradient-to-r from-green-950 via via-green-800 to bg-green-950"
     >
       <img
@@ -93,24 +92,25 @@
               alt=""
               srcset=""
             />
-
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <h1 class="text-xl font-bold">জাতীয় জরুরি সেবা</h1>
+          <h1 id="service-title" class="text-xl font-bold">জাতীয় জরুরি সেবা</h1>
           <h2>National Emergency</h2>
-          <h2 class="text-2xl font-bold">999</h2>
+          <h2 id="contact-no" class="text-2xl font-bold">999</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">সার্বজনীন</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -122,24 +122,26 @@
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/police.png" alt="" srcset="" />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">পুলিশ</h1>
+          <h1 id="service-title" class="text-xl font-bold">পুলিশ</h1>
           <h2>Police</h2>
-          <h2 class="text-xl font-bold">999</h2>
+          <h2 id="contact-no" class="text-xl font-bold">999</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">পুলিশ</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -156,24 +158,26 @@
               alt=""
               srcset=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">ফায়ার সার্ভিস</h1>
+          <h1 id="service-title" class="text-xl font-bold">ফায়ার সার্ভিস</h1>
           <h2>Fire Service</h2>
-          <h2 class="text-xl font-bold">999</h2>
+          <h2 id="contact-no" class="text-xl font-bold">999</h2>
           <div class="text-inside w-[70px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">ফায়ার</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -190,24 +194,26 @@
               alt=""
               srcset=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">অ্যাম্বুলেন্স</h1>
+          <h1 id="service-title" class="text-xl font-bold">অ্যাম্বুলেন্স</h1>
           <h2>Ambulance</h2>
-          <h2 class="text-xl font-bold">1944-999999</h2>
+          <h2 id="contact-no" class="text-xl font-bold">1944-999999</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">স্বাস্থ্য</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -220,24 +226,28 @@
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/women.png" alt="" srcset="" />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">নারী ও শিশু সহায়তা</h1>
+          <h1 id="service-title" class="text-xl font-bold">
+            নারী ও শিশু সহায়তা
+          </h1>
           <h2>Women and Children Helpline</h2>
-          <h2 class="text-xl font-bold">109</h2>
+          <h2 id="contact-no" class="text-xl font-bold">109</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">সহায়তা</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -254,24 +264,26 @@
               alt=""
               srcset=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">দুদক</h1>
+          <h1 id="service-title" class="text-xl font-bold">দুদক</h1>
           <h2>Anti-corruption Commission</h2>
-          <h2 class="text-xl font-bold">106</h2>
+          <h2 id="contact-no" class="text-xl font-bold">106</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">সরকারি</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -288,24 +300,26 @@
               alt=""
               srcset=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">বিদ্যুৎ বিভ্রাট</h1>
+          <h1 id="service-title" class="text-xl font-bold">বিদ্যুৎ বিভ্রাট</h1>
           <h2>Electricity Outage</h2>
-          <h2 class="text-xl font-bold">16216</h2>
+          <h2 id="contact-no" class="text-xl font-bold">16216</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">বিদ্যুৎ</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -317,24 +331,26 @@
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/brac.png" alt="" srcset="" />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">ব্র্যাক</h1>
+          <h1 id="service-title" class="text-xl font-bold">ব্র্যাক</h1>
           <h2>Brac</h2>
-          <h2 class="text-xl font-bold">16445</h2>
+          <h2 id="contact-no" class="text-xl font-bold">16445</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">এন জি ও</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -351,24 +367,26 @@
               alt=""
               srcset=""
             />
-            <i class="fa-regular fa-heart"></i>
+            <button class="clickable-hearts">
+              <i class="fa-regular fa-heart"></i>
+            </button>
           </div>
 
-          <h1 class="text-xl font-bold">বাংলাদেশ রেলওয়ে</h1>
+          <h1 id="service-title" class="text-xl font-bold">বাংলাদেশ রেলওয়ে</h1>
           <h2>Bangladesh Railway</h2>
-          <h2 class="text-xl font-bold">163</h2>
+          <h2 id="contact-no" class="text-xl font-bold">163</h2>
           <div class="text-inside w-[72px] h-[24px] bg-[#5c5c5c33] rounded-xl">
             <h3 class="text-center">পরিবহন</h3>
           </div>
 
           <div id="inside-card" class="flex flex-1 gap-2 pt-5">
             <button
-              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)]"
+              class="w-[120px] h-[40px] border border-[rgba(212,214,213,1)] rounded-md bg-[rgba(255, 255, 255, 1)] hover:bg-pink-300 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white"
+              class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
               <i class="fa-solid fa-phone"></i> Call
             </button>
@@ -386,42 +404,67 @@
           <button
             type="button"
             id="btn-clear"
-            class="w-[90px] h-[30px] rounded-md bg-[#00A63E] text-white"
+            class="w-[90px] h-[30px] rounded-md bg-[#00A63E] text-white hover:bg-green-900 hover:shadow-lg transition duration-300"
           >
             Clear
           </button>
         </div>
-        <div id="call-list" class="flex flex-col">
-          <div id="his1" class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
-            <h1>জাতীয় জরুরি সেবা</h1>
-            <div class="flex text-center justify-between">
-              <p>999</p>
-              <p>11:13:00 AM</p>
-            </div>
-          </div>
-          <div id="his2" class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
-            <h1>আম্বুলেন্স</h1>
-            <div class="flex text-center justify-between">
-              <p>1-994-999999</p>
-              <p>10:15:00 AM</p>
-            </div>
-          </div>
-          <div id="his3" class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
-            <h1>পুলিশ</h1>
-            <div class="flex text-center justify-between">
-              <p>999</p>
-              <p>7:05:00 AM</p>
-            </div>
-          </div>
-          <div id="his4" class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
-            <h1>ফায়ার সার্ভিস</h1>
-            <div class="flex text-center justify-between">
-              <p>999</p>
-              <p>3:05:00 AM</p>
-            </div>
-          </div>
+        <div class="flex flex-col">
+          <ul id="call-list">
+            <li>
+              <div
+                id="his1"
+                class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]"
+              >
+                <h1>জাতীয় জরুরি সেবা</h1>
+                <div class="flex text-center justify-between">
+                  <p>999</p>
+                  <p>11:13:00 AM</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                id="his2"
+                class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]"
+              >
+                <h1>আম্বুলেন্স</h1>
+                <div class="flex text-center justify-between">
+                  <p>1-994-999999</p>
+                  <p>10:15:00 AM</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                id="his3"
+                class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]"
+              >
+                <h1>পুলিশ</h1>
+                <div class="flex text-center justify-between">
+                  <p>999</p>
+                  <p>7:05:00 AM</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div
+                id="his4"
+                class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]"
+              >
+                <h1>ফায়ার সার্ভিস</h1>
+                <div class="flex text-center justify-between">
+                  <p>999</p>
+                  <p>3:05:00 AM</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    <script src="./src/countHeart.js"></script>
+    <script src="./src/callExecution.js"></script>
+    <script src="./src/clearHistory.js"></script>
   </body>
 </html>
