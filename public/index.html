@@ -5,11 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <banner class="w-full max-h-24 flex flex-row">
-      <img class="" src="../assets/logo.png" alt="logo" srcset="" />
-      <h2 class="text-2xl border-2 shadow-orange-400">Emergency Service</h2>
-    </banner>
+  <body class="w-full box-content">
+    <nav
+      class="w-full max-h-10 pl-6 pr-6 pt-14 pb-14 flex flex-row items-center justify-between shadow-[0_1px_50px_0px_rgba(181,181,181,0.25)] bg-white"
+    >
+      <div id="left" class="flex flex-row items-center justify-between">
+        <img class="w-8 h-8" src="../assets/logo.png" alt="logo" />
+        <h3 class="text-lg font-extrabold text-[#006747] pl-5">
+          Emergency <br />Service
+        </h3>
+      </div>
+      <div id="right" class="flex items-center justify-around">
+        <ul class="flex flex-row space-x-4">
+          <li>
+            <div
+              id="life"
+              class="bg-[#43ff641a] rounded-xl p-3 flex flex-row items-center justify-between space-x-3"
+            >
+              <h1 class="text-base font-extrabold">0</h1>
+              <img class="w-6 h-6" src="../assets/heart.png" alt="" srcset="" />
+            </div>
+          </li>
+          <li>
+            <div
+              id="coins"
+              class="bg-[#43ff641a] rounded-xl p-3 flex flex-row items-center justify-between space-x-4"
+            >
+              <h1 class="text-base font-extrabold">100</h1>
+              <img class="w-8 h-8" src="../assets/coin.png" alt="" srcset="" />
+            </div>
+          </li>
+          <li>
+            <div id="coins" class="bg-[#00a63e] rounded-3xl p-3">
+              <h1 class="text-lg font-extrabold text-white">2 Copy</h1>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </body>
 </html>
