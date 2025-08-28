@@ -1,10 +1,9 @@
 let callBtns = document.getElementsByClassName("call-btn");
 let coinsLeft = document.getElementById("coins-left");
+let coins = 100; //default value
 for (let callBtn of callBtns) {
   callBtn.addEventListener("click", (event) => {
-    // let siblingTitle = event.target.parentNode;
-    // console.log(siblingTitle);
-    let coins = Number.parseInt(coinsLeft.innerText);
+    // event.preventDefault();
     if (coins > 0) {
       //update coin count
       coins = coins - 20;
@@ -27,30 +26,28 @@ for (let callBtn of callBtns) {
         " কেন্দ্রে, এই নাম্বারেঃ " +
         contactNode.innerText +
         "...";
+
       let now = new Date();
       let time = now.toLocaleTimeString();
-      //newNode innerText
 
       newChild.innerHTML =
-        `<div class="w-0.9 h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]"
-              >
-                <h1>` +
+        `<div class="w-0.9 sm:h-full md:h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
+          <h1>` +
         titleNode.innerText +
         `</h1>
-                <div class="flex text-center justify-between">
-                  <p>` +
+          <div class="flex flex-1 sm:flex-col md:flex-row text-center justify-between">
+              <p class="text-left">` +
         contactNode.innerText +
         `</p>
-                  <p>` +
+              <p class="sm:text-left md:text-right">` +
         time +
         `</p>
-                </div>
-              </div>`;
+          </div>
+        </div>`;
+
       parentUL.appendChild(newChild);
       setTimeout(() => {
         alert(msg);
-        //   window.location = "./";
-        //   return;
       }, 5);
     } else {
       alert(
