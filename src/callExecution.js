@@ -31,7 +31,7 @@ for (let callBtn of callBtns) {
       let time = now.toLocaleTimeString();
 
       newChild.innerHTML =
-        `<div class="w-0.9 sm:h-full md:h-[86px] m-2 p-4 rounded-lg bg-[#fafafa]">
+        `<div class="flex flex-1 flex-col m-2 p-2 rounded-lg bg-[#fafafa]">
           <h1>` +
         titleNode.innerText +
         `</h1>
