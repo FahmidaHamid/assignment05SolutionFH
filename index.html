@@ -22,6 +22,14 @@
       button i {
         pointer-events: none;
       }
+      .left-cards {
+        flex: 0 0 80%; /* flex-grow, flex-shrink, flex-basis */
+        /* Or simply: width: 80%; */
+      }
+
+      .right-list {
+        flex: 1; /* This column will take up the remaining space */
+      }
     </style>
   </head>
   <body
@@ -82,9 +90,9 @@
         Government of the People's Republic of Bangladesh
       </h3>
     </div>
-    <div id="service-area" class="w-screen p-10 flex flex-1">
+    <div id="service-area" class="w-screen p-10 flex flex-1 gap-1.5">
       <div
-        class="left-cards w-4/5 grid sm:grid-cols-1 lg:grid-cols-2 gap-x-2 gap-y-2 justify-center items-center rounded-xl shadow-white flex-1"
+        class="left-cards grid sm:grid-cols-1 lg:grid-cols-3 gap-x-1 gap-y-1 justify-center items-center rounded-xl shadow-white flex-1"
       >
         <div
           class="flex flex-1 flex-col max-w-[360px] max-h-[280px] sm:p-4 md:p-8 bg-[ #ffffff80] rounded-xl shadow-sm bg-white gap-1"
@@ -96,7 +104,9 @@
               alt=""
               srcset=""
             />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -127,7 +137,9 @@
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/police.png" alt="" srcset="" />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -162,7 +174,9 @@
               alt=""
               srcset=""
             />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -197,7 +211,9 @@
               alt=""
               srcset=""
             />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -228,7 +244,9 @@
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/women.png" alt="" srcset="" />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -265,7 +283,9 @@
               alt=""
               srcset=""
             />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -300,7 +320,9 @@
               alt=""
               srcset=""
             />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -330,7 +352,9 @@
         >
           <div class="side-by-side flex flex-1 justify-between items-center">
             <img class="w-8 h-8" src="./assets/brac.png" alt="" srcset="" />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -365,7 +389,9 @@
               alt=""
               srcset=""
             />
-            <button class="clickable-hearts">
+            <button
+              class="clickable-hearts hover:bg-red-200 hover:shadow-lg transition duration-300"
+            >
               <i class="fa-regular fa-heart"></i>
             </button>
           </div>
@@ -392,7 +418,7 @@
         </div>
       </div>
       <div
-        class="right-list w-1/5 h-full rounded-xl shadow shadow-gray-100 bg-white p-2 flex-1"
+        class="right-list h-full rounded-xl shadow shadow-gray-100 bg-white p-2"
       >
         <div
           id="history"
