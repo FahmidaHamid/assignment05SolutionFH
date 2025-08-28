@@ -18,6 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      button i {
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body
     class="w-full box-content flex flex-1 flex-col justify-between items-center bg-[#f5fff6]"
@@ -112,7 +117,7 @@
             <button
               class="call-btn w-[120px] h-[40px] rounded-md bg-[#00A63E] text-white hover:bg-purple-600 hover:shadow-lg transition duration-300"
             >
-              <i class="fa-solid fa-phone"></i> Call
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> Call
             </button>
           </div>
         </div>
