@@ -247,6 +247,9 @@
   .w-full {
     width: 100%;
   }
+  .w-screen {
+    width: 100vw;
+  }
   .max-w-\[360px\] {
     max-width: 360px;
   }
